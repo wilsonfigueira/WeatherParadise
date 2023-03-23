@@ -1,0 +1,46 @@
+﻿@model Weather;
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{}
+   
+<div class="text-center">
+    <h1 class="display-4">Bem-vindo</h1>
+    <p>À maravilhosa aplicação Web de metereologia WC</a>.</p>
+    </br>
+
+    <div>
+        @using (Html.BeginForm("WeatherAPIForm", "Home", FormMethod.Post))
+        {
+           <table class=" table table-dark table-striped table-bordered table-hover table-responsive">
+               <tr>
+                   <td >Location name:</td>
+                   <td>@Html.TextBoxFor(wm=> wm.LocationName, new
+                       { @class="form-control"})</td>
+               </tr
+               <tr>
+                   <td>Today </td>
+                   <td>@Html.RadioButtonFor(wm => wm.Period, "Today")</td>
+               </tr>
+               <tr>
+                   <td>Tomorrow </td>
+                   <td>@Html.RadioButtonFor(wm => wm.Period, "Tomorrow")</td>
+               </tr>
+               <tr>
+                   <td>Next 7 days </td>
+                   <td>@Html.RadioButtonFor(wm => wm.Period, "Next 7 days")</td>
+               </tr>
+                  <tr>
+                   <td>Next 15 days </td>
+                   <td>@Html.RadioButtonFor(wm => wm.Period, "Next 15 days")</td>
+               </tr>
+
+               <tr>
+                   <td colspan="2"><button type="submit" class="btn-primary">Pesquisar</button></td>
+               </tr>
+           </table>
+        }
+    </div>
+</div>
+

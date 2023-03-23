@@ -1,0 +1,45 @@
+﻿body {
+    height: 120%;
+    
+}
+
+body {
+    display: flex;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 40px;
+    background-color: #F8F8FF;
+    background-image: url("Image/wallausar.jpg");
+    background-repeat: no-repeat;
+}
+
+.form-signin {
+    max-width: 800px;
+    padding: 15px;
+    font-style: oblique;
+    color: antiquewhite;
+    font-family:'Comic Sans MS';
+}
+
+    .form-signin .form-floating:focus-within {
+        z-index: 10;
+        font-family: 'Comic Sans MS';
+        color: black;
+    }
+
+    .form-signin input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        font-family: 'Comic Sans MS';
+        color: black;
+    }
+
+    .form-signin input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        
+    }
+
+
